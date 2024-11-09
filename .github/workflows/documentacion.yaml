@@ -24,5 +24,8 @@ jobs:
           pip install pylint  # Librería para análisis de código
 
       - name: Run documentation script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}  # Usar el secreto aquí
+     
         run: python generar_documentacion.py
 
