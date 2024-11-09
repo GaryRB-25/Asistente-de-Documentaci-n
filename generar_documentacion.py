@@ -17,3 +17,4 @@ print(response.choices[0].text.strip())
 # Guardar la documentación en un archivo de texto
 with open('documentacion_generada.txt', 'w') as file:
     file.write(response.choices[0].text.strip())  # Guardamos el texto generado en el archivo
+print("Archivo generado: documentacion_generada.txt")
