@@ -28,4 +28,9 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}  # Usar el secreto aquí
      
         run: python generar_documentacion.py
-
+        
+      - name: Upload generated documentation
+        uses: actions/upload-artifact@v2
+        with:
+          name: documentacion-generada
+          path: documentacion_generada.txt  # Ruta del archivo generado por el script
