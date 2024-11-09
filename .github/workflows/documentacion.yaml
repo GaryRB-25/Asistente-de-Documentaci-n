@@ -33,4 +33,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: documentacion-generada
-          path: documentacion_generada.txt  # Ruta del archivo generado por el script
+          path: /home/runner/work/Asistente-de-Documentaci-n/Asistente-de-Documentaci-n/documentacion_generada.txt  # Ruta del archivo generado por el script
